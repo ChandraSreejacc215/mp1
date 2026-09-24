@@ -1,13 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandra Sreeja Chinigepalli</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-brand">Chandra Sreeja</a>
+        <ul class="nav-menu" id="nav-menu">
+
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#media" class="nav-link">Media</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    
+    <section id="hero" class="section section-hero bg-fixed">
+      <div class="hero-overlay"></div>
+      <div class="hero-center-box">
+        <h1 class="hero-title">Chandra Sreeja Chinigepalli</h1>
+        <p class="hero-subtitle">Software Engineer | Distributed Systems, Scalable Applications & Cloud Architecture</p>
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+      </div>
+    </section>
+    <section id="about" class="section section-about">
+      <div class="container text-center">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-description">
+          I am a software engineer focused on building resilient and high throughput backend services.
+        </p>
+        <button id="open-modal-btn" class="btn btn-secondary" type="button">Read Bio 
+            & Background</button>
+      </div>
+    </section>
+
+
+    <section id="skills" class="section section-skills bg-alt">
+      <div class="container">
+        <h2 class="section-title text-center">Technical Domains</h2>
+        <div class="multi-column-grid">
+          <div class="grid-card">
+
+            <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3 class="card-title">Parallel Programming</h3>
+            <p class="card-text">Accelerating compute-heavy workloads using CUDA and multi-threaded parallel architectures for high-throughput performance.</p>
+            
+          </div>
+          <div class="grid-card">
+            <div class="card-icon"><i class="fa-solid fa-server"></i></div>
+            <h3 class="card-title">Backend & Systems</h3>
+            <p class="card-text">Architecting fault-tolerant microservices, message streaming backends, and relational/NoSQL pipelines.</p>
+          </div>
+          <div class="grid-card">
+            <div class="card-icon"><i class="fa-solid fa-cubes"></i></div>
+            <h3 class="card-title">Cloud Deployment</h3>
+            <p class="card-text">Containerizing applications, writing orchestration configs, and setting up automated CI/CD pipelines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="projects" class="section section-carousel">
+      <div class="container text-center">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <div class="carousel-wrapper">
+          <button class="carousel-arrow prev" id="carousel-prev" aria-label="Previous Slide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="carousel-track-container">
+            <ul class="carousel-track" id="carousel-track">
+              <li class="carousel-slide current-slide">
+                
+                <div class="slide-card">
+                  <div class="slide-icon"><i class="fa-solid fa-chart-line"></i></div>
+                  <h3>Enterprise Monitoring & Automation</h3>
+                  <p>Re-engineered real-time application monitoring services, automated enterprise workflows, and streamlined internal operations.</p>
+                </div>
+              </li>
+              <li class="carousel-slide">
+                <div class="slide-card">
+                  <div class="slide-icon"><i class="fa-solid fa-ticket"></i></div>
+                  <h3>Campus Event Ticketing Platform</h3>
+                  <p>Architected a high-traffic web platform with integrated payment gateway workflows and dynamic QR-based ticket verification.</p>
+                </div>
+              </li>
+              <li class="carousel-slide">
+                <div class="slide-card">
+                  <div class="slide-icon"><i class="fa-solid fa-brain"></i></div>
+                  <h3>Approximate Nearest Neighbor Benchmarking</h3>
+                  <p>Analyzed performance and recall trade-offs between graph-based and disk-optimized vector indexing implementations under heavy query loads.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <button class="carousel-arrow next" id="carousel-next" aria-label="Next Slide">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="carousel-nav" id="carousel-nav">
+          <button class="carousel-indicator current-indicator" type="button" aria-label="Slide 1"></button>
+          <button class="carousel-indicator" type="button" aria-label="Slide 2"></button>
+          <button class="carousel-indicator" type="button" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+
+<section id="media" class="section section-media bg-alt">
+  <div class="container text-center">
+    <h2 class="section-title">Featured Media</h2>
+    <p class="section-description">AI Research Tools Project Demo</p>
+    <div class="video-wrapper">
+      <video controls preload="metadata">
+        <source src="assets/demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
+
+    <section id="contact" class="section section-contact">
+      <div class="container text-center">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-description">Reach out to discuss distributed systems, or 
+            collaboration opportunities.</p>
+        <a href="https://www.linkedin.com/in/chandrasreeja/" 
+           target="_blank" class="btn btn-primary">Connect on LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-window">
+      <button class="modal-close" id="modal-close" aria-label="Close Modal">&times;</button>
+      <h3 class="modal-title">Background & Experience</h3>
+      <div class="modal-body">
+        <p>I am a software engineer with experience spanning enterprise service monitoring, workflow automation.</p>
+        <p>My toolkit includes modern distributed backend architectures, containerization, and data synchronization.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="social-icons">
+        <a href="https://github.com/ChandraSreejacc215" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/chandrasreeja/" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+
+      <p class="footer-copyright">Chandra Sreeja Chinigepalli</p>
+    </div>
+  </footer>
+
+</body>
+
 </html>
